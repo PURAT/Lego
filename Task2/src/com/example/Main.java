@@ -1,5 +1,16 @@
 package com.example;
 
+/* Условие задания:
+    У вас есть Java функция в которую пользователь передает текст и регулярное выражение.
+    Измените функцию так, чтобы избежать зависаний и выбрасывания исключений в процессе исполнения.
+
+    public boolean matches(String text, String regex) {
+        return Pattern.compile(regex).matcher(text).matches();
+    }
+
+    Подсказка: вы не хотите вечно ждать пока matches() закончит работу.
+ */
+
 import java.util.concurrent.*;
 import java.util.regex.Pattern;
 
